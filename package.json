@@ -1,29 +1,33 @@
 {
-  "name": "battleships",
+  "name": "Slagskibs",
   "version": "1.0.0",
-  "description": "Multiplayer Battleship Game",
+  "description": "Multiplayer Slagskib Game",
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack ./public/app.js --output-filename=bundle.js --mode=development"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kubowania/battleships.git"
+    "url": "git+https://github.com/kubowania/Slagskibs.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kubowania/battleships/issues"
+    "url": "https://github.com/kubowania/Slagskibs/issues"
   },
-  "homepage": "https://github.com/kubowania/battleships#readme",
+  "homepage": "https://github.com/kubowania/Slagskibs#readme",
   "dependencies": {
     "express": "^4.17.1",
     "materialize-css": "^1.0.0-rc.2",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0"
   }
 }

@@ -11,9 +11,36 @@
   --space: 1rem;
 }
 
+.pirat1{
+  position: fixed;
+  top: 33%;
+  transform: rotate(20deg);
+  width: 15%;
+  left: 65%;
+}
+
+.pirat2{
+  position: fixed;
+  top: 2%;
+  transform: rotate(20deg);
+  width: 8%;
+  left: 22%;
+}
+
+.fuc{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 150;
+
+}
+
 body {
   margin: 0;
-  background-color: #87ceeb;
+  background-image: url("skibe.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
 }
 
@@ -121,8 +148,16 @@ body {
   grid-template-columns: repeat(10,4.6vmin);
 }
 
+.skibe {
+  margin: auto;
+  width: 50%;
+  border: 1.2px solid black;
+  padding: 10px;
+  background-color: white;
+}
+
 .taken, .ship{
-  background-color: rgb(37, 34, 102);
+  background-color: rgb(128, 66, 66);
   position: relative;
 }
 
@@ -193,7 +228,7 @@ body {
 
 
 
-.grid-display{
+.grid-visuelt{
   display: flex;
 }
 
@@ -288,39 +323,39 @@ body {
   text-decoration: none;
 }
 
-.destroyer-container {
+.Patruljebod-container {
   --width: 2;
 }
-.destroyer-container-vertical {
+.Patruljebod-container-vertical {
   --height: 2;
   --width: 1;
 }
 
-.submarine-container, .cruiser-container {
+.UBod-container, .Kampskib-container {
   --width: 3;
 }
 
-.submarine-container-vertical, .cruiser-container-vertical {
+.UBod-container-vertical, .Kampskib-container-vertical {
   --height: 3;
   --width: 1;
 }
 
 
-.battleship-container {
+.Slagskib-container {
   --width: 4;
 }
 
-.battleship-container-vertical {
+.Slagskib-container-vertical {
   --height: 4;
   --width: 1;
 }
 
 
-.carrier-container {
+.Hangarskib-container {
   --width: 5;
 }
 
-.carrier-container-vertical {
+.Hangarskib-container-vertical {
   --height: 5;
   --width: 1;
 }
